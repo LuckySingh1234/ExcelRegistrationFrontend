@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Populate Excel</title>
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="/index.js"></script>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/index.css">
+    </head>
+
+    <body>
+        <div class="d-flex justify-content-center align-items-center form-container">
+            <div class="data-form text-center">
+                <h1 class="mb-5 font-weight-light text-uppercase">Generate Excel</h1>
+                <div class="form-group">
+                    <input type="text" id="firstName" class="form-control rounded-pill form-control-lg" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" class="form-control rounded-pill form-control-lg" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" class="form-control rounded-pill form-control-lg" placeholder="E-mail">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="phone" class="form-control rounded-pill form-control-lg" placeholder="Phone">
+                </div>
+                <div id="errorMessage" class="error"></div>
+                <button class="btn mt-5 rounded-pill btn-lg btn-custom btn-block text-uppercase" onclick=validateAndGenerateExcel()>Validate and Generate Excel</button>
+                <div id="apiResponse" class="api mt-5"></div>
+            </div>
+        </div>
+    </body>
+
+</html>
